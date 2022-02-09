@@ -1,5 +1,4 @@
-  api/* https://fifaso.herokuapp.com/api/:splat 200
-/* /index.html 200           
+/api/*  https://fifaso.herokuapp.com/api/:splat  200
 
 [[redirects]]
   from = "/*"
