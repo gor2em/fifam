@@ -1,14 +1,16 @@
 const endpoint = "/league";
 import axios from "axios";
 
+const url = process.env.VUE_APP_API_URL;
+
 import { api } from "./UseApi";
 
 export default {
   getAll() {
-    return axios.get(endpoint);
+    return axios.get(url + endpoint);
   },
   getDetail(id) {
-    return axios.get(endpoint + "/" + id);
+    return axios.get(url + endpoint + "/" + id);
   },
   createLeague(data) {
     return api().post(endpoint, data);

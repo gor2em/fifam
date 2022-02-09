@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
     // proxy: "http://localhost:5000/api",
-    proxy: "https://fifaso.herokuapp.com/api",
-    disableHostCheck: true,
+    // proxy: "https://fifaso.herokuapp.com/api",
+    // disableHostCheck: true,
   },
 };

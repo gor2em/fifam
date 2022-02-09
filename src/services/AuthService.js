@@ -1,8 +1,8 @@
 import axios from "axios";
-const endpoint = "/api/auth";
-
+const endpoint = "/auth";
+const url = process.env.VUE_APP_API_URL;
 export default {
   login(data) {
-    return axios.post(endpoint + "/login", data);
+    return axios.post(url + endpoint + "/login", data);
   },
 };
