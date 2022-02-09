@@ -5,7 +5,7 @@ import { api } from "./UseApi";
 
 export default {
   getAll() {
-    return axios.get("https://fifaso.herokuapp.com/api", endpoint);
+    return axios.get(endpoint);
   },
   getDetail(id) {
     return axios.get(endpoint + "/" + id);
