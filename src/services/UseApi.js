@@ -6,6 +6,7 @@ const token = computed(() => store.getters._user.token);
 
 export function api() {
   return axios.create({
+    baseURL:"",
     headers: {
       token: `Bearer ${token.value}`,
     },
